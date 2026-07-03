@@ -1,9 +1,10 @@
 import "./App.css";
+import Scoreboard from "./components/Scoreboard.jsx";
 
 function App() {
   return (
     <>
-      <h1>Hi</h1>
+      <Scoreboard />
     </>
   );
 }
