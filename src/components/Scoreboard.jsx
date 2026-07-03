@@ -1,7 +1,7 @@
 export default function Scoreboard() {
   return (
     <>
-      <header>
+      <header className="scoreboard">
         <h1>
           Score: <span>3</span>
         </h1>

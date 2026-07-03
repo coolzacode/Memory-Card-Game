@@ -7,7 +7,7 @@ function App() {
     { name: "United States", emoji: "🇺🇸" },
     { name: "Canada", emoji: "🇨🇦" },
     { name: "Mexico", emoji: "🇲🇽" },
-    { naem: "United Kingdom", emoji: "🇬🇧" },
+    { name: "United Kingdom", emoji: "🇬🇧" },
   ];
   return (
     <>
