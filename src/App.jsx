@@ -7,12 +7,12 @@ function App() {
   const [clickedCountries, setClickedCountries] = useState([]);
   const [bestScore, setBestScore] = useState(0);
   const score = clickedCountries.length;
-  const countryData = [
+  const [countryData, setCountryData] = useState([
     { name: "United States", emoji: "🇺🇸" },
     { name: "Canada", emoji: "🇨🇦" },
     { name: "Mexico", emoji: "🇲🇽" },
     { name: "United Kingdom", emoji: "🇬🇧" },
-  ];
+  ]);
 
   if (score > bestScore) {
     setBestScore(score);
@@ -22,6 +22,7 @@ function App() {
       <Scoreboard score={score} bestScore={bestScore} />
       <Gameboard
         countryData={countryData}
+        setCountryData={setCountryData}
         clickedCountries={clickedCountries}
         setClickedCountries={setClickedCountries}
       />
