@@ -1,5 +1,6 @@
 import "./App.css";
 import { useState } from "react";
+import { TARGET_COUNTRIES } from "./services/countries.js";
 import Scoreboard from "./components/Scoreboard.jsx";
 import Gameboard from "./components/Gameboard.jsx";
 
@@ -15,13 +16,7 @@ function pureShuffle(data) {
 function App() {
   const [clickedCountries, setClickedCountries] = useState([]);
   const [bestScore, setBestScore] = useState(0);
-  const [countryData, setCountryData] = useState([
-    { name: "United States", emoji: "🇺🇸" },
-    { name: "Canada", emoji: "🇨🇦" },
-    { name: "Mexico", emoji: "🇲🇽" },
-    { name: "United Kingdom", emoji: "🇬🇧" },
-  ]);
-
+  const [countryData, setCountryData] = useState(TARGET_COUNTRIES);
   const score = clickedCountries.length;
 
   function handleCardClick(name) {
